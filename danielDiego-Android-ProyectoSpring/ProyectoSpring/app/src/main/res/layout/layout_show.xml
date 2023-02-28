@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="330sp"
+    android:background="@color/fondo">
+
+    <ImageView
+        android:id="@+id/imagen"
+        android:layout_width="114dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="193dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="TextView"
+        android:textColor="@color/titulo"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imagen"
+        app:layout_constraintTop_toTopOf="@+id/imagen" />
+
+    <TextView
+        android:id="@+id/director"
+        android:layout_width="215dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="15dp"
+        android:text="TextView"
+        android:textColor="@color/letra"
+        app:layout_constraintStart_toStartOf="@+id/titulo"
+        app:layout_constraintTop_toBottomOf="@+id/titulo" />
+
+    <TextView
+        android:id="@+id/reparto"
+        android:layout_width="217dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="15dp"
+        android:text="TextView"
+        android:textColor="@color/letra"
+        app:layout_constraintStart_toStartOf="@+id/titulo"
+        app:layout_constraintTop_toBottomOf="@+id/director" />
+
+    <TextView
+        android:id="@+id/Tagtitulo"
+        android:layout_width="78dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="40dp"
+        android:text="Tags"
+        android:textColor="@color/terciario"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/imagen"
+        app:layout_constraintTop_toBottomOf="@+id/imagen" />
+
+    <TextView
+        android:id="@+id/fechatitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="Fecha Lanzamiento"
+        android:textColor="@color/terciario"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.633"
+        app:layout_constraintStart_toEndOf="@+id/Tagtitulo"
+        app:layout_constraintTop_toTopOf="@+id/Tagtitulo" />
+
+    <TextView
+        android:id="@+id/tags"
+        android:layout_width="139dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="TextView"
+        android:textColor="@color/letra"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/Tagtitulo"
+        app:layout_constraintTop_toBottomOf="@+id/Tagtitulo" />
+
+    <TextView
+        android:id="@+id/ano"
+        android:layout_width="193dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="10dp"
+        android:text="TextView"
+        android:textColor="@color/letra"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/fechatitulo"
+        app:layout_constraintTop_toBottomOf="@+id/fechatitulo" />
+</androidx.constraintlayout.widget.ConstraintLayout>

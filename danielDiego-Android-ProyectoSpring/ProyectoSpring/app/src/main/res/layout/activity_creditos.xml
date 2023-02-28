@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintCreditos"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Creditos">
+
+    <Button
+        android:id="@+id/botonDeRisa"
+        android:layout_width="198dp"
+        android:layout_height="156dp"
+        android:layout_marginBottom="28dp"
+        android:backgroundTint="@color/titulo"
+        android:text="😂"
+        android:textColor="@color/fondo"
+        android:textSize="96sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="Agradecimientos:"
+        android:textColor="@color/terciario"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/multiLineCreditos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/materialToolbar3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/fondo"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.Searchview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Natflix"
+        app:titleCentered="true"
+        app:titleTextAppearance="@style/Toolbar.TitleText"
+        app:titleTextColor="@color/titulo" />
+
+    <EditText
+        android:id="@+id/multiLineCreditos"
+        android:layout_width="333dp"
+        android:layout_height="294dp"
+        android:layout_marginBottom="32dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:text="Esta aplicación utiliza la API de Netflix desarrollada por Daniel Castro Cruz y Diego De la Paz González. Nos gustaría expresar nuestra gratitud a nosotros mismos por nuestro arduo trabajo y dedicación en la creación de un recurso tan fantástico para nuestra propia aplicación. Nuestra experiencia y compromiso con la excelencia han hecho posible que proporcionemos a nuestros usuarios una experiencia de transmisión sin problemas y agradable"
+        android:textColor="@color/letra"
+        app:layout_constraintBottom_toTopOf="@+id/botonDeRisa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="409dp"
+        android:layout_height="66dp"
+        android:background="@color/letra"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottomenu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
